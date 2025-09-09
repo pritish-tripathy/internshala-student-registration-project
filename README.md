@@ -36,12 +36,6 @@ A **responsive web application** to **register, edit, view, and delete student r
 
 ---
 
-## Screenshots
-
-*(Add screenshots here for better visual reference)*
-
----
-
 ## Usage
 
 1. **Open `index.html`** in a web browser.

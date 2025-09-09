@@ -4,6 +4,25 @@ A **responsive web application** to **register, edit, view, and delete student r
 
 ---
 
+## Live Demo
+
+You can view the live version of the **Student Registration System** hosted on **GitHub Pages** here:
+
+[➡️ View Live Site](https://pritish-tripathy.github.io/internshala-student-registration-project/)
+
+> Note: The live site automatically updates whenever you push changes to the `main` branch.
+
+---
+
+## Repository
+
+The source code for this project is available on GitHub:
+
+[➡️ View Repository](https://github.com/pritish-tripathy/internshala-student-registration-project)
+If you want, I can generate the complete updated README.md for your project with Features, Usage, Live Demo, Repository link, and everything in a clean professional format ready to paste.
+
+---
+
 ## Features
 
 - **Add / Edit / Delete Students**

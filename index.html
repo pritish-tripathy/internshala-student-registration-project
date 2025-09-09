@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Registration System</title>
+  <meta name="description" content="Register, view, edit, and delete student records with validation and persistent storage.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Student Registration System</h1>
+  <p>Register, edit, and delete student records with validation and persistent storage. Fully responsive for mobile, tablet, and desktop.</p>
+</header>
+<main>
+  <section class="card" aria-labelledby="formTitle">
+    <h2 id="formTitle" class="section-title">Register Student <span class="badge">Add / Edit</span></h2>
+    <form id="studentForm" novalidate>
+      <div class="row">
+        <div class="field">
+          <label for="studentName">Student Name</label>
+          <input id="studentName" name="studentName" type="text" placeholder="e.g., Priya Sharma" autocomplete="name" required>
+          <div id="errorName" class="error"></div>
+        </div>
+        <div class="field">
+          <label for="studentId">Student ID</label>
+          <input id="studentId" name="studentId" type="text" placeholder="Numeric ID, e.g., 1024" inputmode="numeric" required>
+          <div id="errorId" class="error"></div>
+        </div>
+        <div class="field">
+          <label for="email">Email ID</label>
+          <input id="email" name="email" type="email" placeholder="e.g., priya@example.com" autocomplete="email" required>
+          <div id="errorEmail" class="error"></div>
+        </div>
+        <div class="field">
+          <label for="contact">Contact Number</label>
+          <input id="contact" name="contact" type="tel" placeholder="10+ digits only" inputmode="numeric" required>
+          <div id="errorContact" class="error"></div>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="submitBtn" type="submit">Save Record</button>
+        <button id="resetBtn" type="button" class="secondary">Reset Form</button>
+        <button id="clearAllBtn" type="button" class="danger">Clear All</button>
+        <span id="formHint" class="hint" aria-live="polite"></span>
+      </div>
+    </form>
+  </section>
+  <section class="card" aria-labelledby="listTitle">
+    <div class="toolbar">
+      <h2 id="listTitle" class="section-title">Registered Students <span class="badge"><span id="count">0</span> total</span></h2>
+      <input id="search" class="search input" type="search" placeholder="Search by name, ID or email…">
+    </div>
+    <div class="list">
+      <header class="muted">
+        <div>Name</div><div>Student ID</div><div>Email</div><div>Contact</div><div>Actions</div>
+      </header>
+      <div id="rows" class="scroll-wrap" role="region" aria-label="Student list (scrollable)"></div>
+    </div>
+    <p class="hint" style="margin-top:8px">Tip: The list gets a vertical scrollbar automatically when content exceeds the visible area.</p>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
